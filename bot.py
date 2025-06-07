@@ -2,6 +2,21 @@ import re
 import time
 import asyncio
 from playwright.async_api import async_playwright
+import requests
+
+def send_discord_webhook(message: str) -> None:
+    webhook_url = "https://discord.com/api/webhooks/1381010025698295869/7vNmzHLQzCsOd7gP8cllVuhWIRO_x2xpPqR9esGJvW790aGml0O09bBv9gaDiyQH2Bj7"
+    data = {
+        "content": message
+    }
+
+    response = requests.post(webhook_url, json=data)
+
+    if response.status_code == 204:
+        print("✅ Message envoyé avec succès.")
+    else:
+        print(f"❌ Échec de l'envoi : {response.status_code} - {response.text}")
+
 
 def convertir_en_secondes(texte: str) -> int:
     nombres = [int(num) for num in re.findall(r'\d+', texte)]
@@ -66,12 +81,13 @@ async def run(playwright) -> bool:
                     if counter:
                         for _ in range(4):
                             await counter.click()
-                            await page.wait_for_timeout(500)  # Petite pause pour être sûr que le compteur se met à jour
+                            await page.wait_for_timeout(400)  # Petite pause pour être sûr que le compteur se met à jour
                     else:
                         print("Bouton pour ajouter des billets non trouvé.")
-                    # Attend le bouton Suite pour cliquer dessus
+                    # Attend le bouton "Suite" pour cliquer dessus
                     await page.wait_for_selector(".wz-neo-button-2.wz-cta-next")
                     await page.click(".wz-neo-button-2.wz-cta-next")
+                    send_discord_webhook("🚨🚨🚨HEYYYY ALERTE A MALIBU, Y'A DES PLACES POUR LE DIMANCHE !!! VA CHECK TON PANIER !!🚨🚨🚨")
                     await page.wait_for_timeout(99999999)
                     return False
         return True
