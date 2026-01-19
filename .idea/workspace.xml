@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26758f52-0981-48d2-be3a-b186c7d6bb60" name="Changes" comment="✓ Récupération des jours + ajout dans le panier quand c'est dimanche">
-      <change afterPath="$PROJECT_DIR$/testDiscordBot.py" afterDir="false" />
+    <list default="true" id="26758f52-0981-48d2-be3a-b186c7d6bb60" name="Changes" comment="✓ Bot Discord">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
     </list>
@@ -24,6 +23,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MatysLep&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MatysLep/BotGpExplorer&quot;,
+    &quot;accountId&quot;: &quot;a3b31520-a671-4134-b812-22ea08866cc5&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -33,21 +44,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.bot.executor": "Run",
-    "Python.testDiscordBot.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.bot.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testDiscordBot.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -67,7 +78,11 @@
       <workItem from="1749241593554" duration="6582000" />
       <workItem from="1749305633899" duration="7188000" />
       <workItem from="1749324522918" duration="477000" />
-      <workItem from="1749328893338" duration="817000" />
+      <workItem from="1749328893338" duration="1183000" />
+      <workItem from="1749457096418" duration="1439000" />
+      <workItem from="1750848652077" duration="1109000" />
+      <workItem from="1751920963961" duration="276000" />
+      <workItem from="1753303453927" duration="3000" />
     </task>
     <task id="LOCAL-00001" summary="✓ Acces à la file d'attente">
       <option name="closed" value="true" />
@@ -85,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749312025625</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="✓ Bot Discord">
+      <option name="closed" value="true" />
+      <created>1749329841209</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1749329841209</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,10 +117,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="✓ Acces à la file d'attente" />
     <MESSAGE value="✓ Récupération des jours + ajout dans le panier quand c'est dimanche" />
-    <option name="LAST_COMMIT_MESSAGE" value="✓ Récupération des jours + ajout dans le panier quand c'est dimanche" />
+    <MESSAGE value="✓ Bot Discord" />
+    <option name="LAST_COMMIT_MESSAGE" value="✓ Bot Discord" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/BotGpExplorer$testDiscordBot.coverage" NAME="testDiscordBot Coverage Results" MODIFIED="1749329061729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/BotGpExplorer$bot.coverage" NAME="bot Coverage Results" MODIFIED="1749329396621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/BotGpExplorer$bot.coverage" NAME="bot Coverage Results" MODIFIED="1749457625798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

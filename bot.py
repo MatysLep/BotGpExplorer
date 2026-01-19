@@ -80,8 +80,21 @@ async def run(playwright) -> bool:
                     counter = await page.query_selector('button[aria-label^="Ajouter 1 billet"]')
                     if counter:
                         for _ in range(4):
-                            await counter.click()
-                            await page.wait_for_timeout(400)  # Petite pause pour être sûr que le compteur se met à jour
+                            try:
+                                counter = await page.query_selector('button[aria-label^="Ajouter 1 billet"]')
+                                if counter is None:
+                                    print("🔴 Le bouton n'est plus disponible.")
+                                    break
+                                is_disabled = await counter.get_attribute("disabled")
+                                if is_disabled is not None:
+                                    print("🔴 Le bouton est désactivé, fin des ajouts.")
+                                    break
+                                await counter.click()
+                                await page.wait_for_timeout(
+                                    300)  # Petite pause pour être sûr que le compteur se met à jour
+                            except Exception as e:
+                                print(f"❌ Erreur lors du clic : {e}")
+                                break
                     else:
                         print("Bouton pour ajouter des billets non trouvé.")
                     # Attend le bouton "Suite" pour cliquer dessus
